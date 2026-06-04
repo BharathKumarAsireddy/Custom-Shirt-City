@@ -4,21 +4,42 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ShoppingCart, Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useCart } from "@/context/CartContext";
 
 const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "All Products", href: "/products" },
-  { label: "About", href: "/about" },
-  { label: "Testimonials", href: "/testimonials" },
-  { label: "Contact", href: "/contact" },
+  { label: "Home", href: "/", section: "home" },
+  { label: "All Products", href: "/products", section: "products" },
+  { label: "About", href: "/about", section: "about" },
+  { label: "Testimonials", href: "/testimonials", section: "testimonials" },
+  { label: "Contact", href: "/contact", section: null },
 ];
+
+const SECTIONS = ["home", "products", "about", "testimonials"];
 
 export default function Navbar() {
   const pathname = usePathname();
   const { totalItems } = useCart();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
+
+  useEffect(() => {
+    if (pathname !== "/") return;
+
+    const handleScroll = () => {
+      const threshold = window.scrollY + window.innerHeight * 0.35;
+      let current = "home";
+      for (const id of SECTIONS) {
+        const el = document.getElementById(id);
+        if (el && el.offsetTop <= threshold) current = id;
+      }
+      setActiveSection(current);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [pathname]);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 pt-4">
@@ -47,7 +68,9 @@ export default function Navbar() {
           <nav className="hidden lg:flex items-center gap-0.5 bg-[#111827]/75 backdrop-blur-md rounded-full px-2 py-1.5 border border-white/10 shadow-2xl">
             {navLinks.map((link) => {
               const isActive =
-                link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
+                pathname === "/"
+                  ? activeSection === link.section
+                  : link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
               return (
                 <Link
                   key={link.href}
@@ -94,7 +117,9 @@ export default function Navbar() {
           <nav className="px-3 py-3 flex flex-col gap-1">
             {navLinks.map((link) => {
               const isActive =
-                link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
+                pathname === "/"
+                  ? activeSection === link.section
+                  : link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
               return (
                 <Link
                   key={link.href}

@@ -24,10 +24,12 @@ export default function HomePage() {
 
   return (
     <>
-      <HeroSection />
+      <section id="home">
+        <HeroSection />
+      </section>
 
       {/* Perks Bar */}
-      <section className="bg-white border-b border-gray-100 py-8">
+      <section id="products" className="bg-white border-b border-gray-100 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {perks.map(({ icon: Icon, title, desc }) => (
@@ -80,7 +82,7 @@ export default function HomePage() {
       </section>
 
       {/* About Teaser */}
-      <section>
+      <section id="about">
         <StarsBackground className="py-20 w-full">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -130,7 +132,9 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials Preview */}
-      <TestimonialsSection />
+      <section id="testimonials">
+        <TestimonialsSection />
+      </section>
 
       {/* CTA Banner */}
       <section>
