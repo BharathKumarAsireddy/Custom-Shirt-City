@@ -39,7 +39,9 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/people/Custom-Shirt-City/100057044816679/"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Facebook"
                 className="w-9 h-9 rounded-full bg-[#1a2744] flex items-center justify-center text-gray-400 hover:text-[#f59e0b] hover:bg-[#243560] transition-colors"
               >
@@ -48,7 +50,9 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.google.com/search?q=custom+shirt+city+west+palm+beach"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Google"
                 className="w-9 h-9 rounded-full bg-[#1a2744] flex items-center justify-center text-gray-400 hover:text-[#f59e0b] hover:bg-[#243560] transition-colors"
               >
