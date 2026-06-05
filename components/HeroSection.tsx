@@ -19,21 +19,13 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="max-w-3xl">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-[#f59e0b]/20 border border-[#f59e0b]/40 rounded-full px-4 py-1.5 mb-6">
-            <Star size={14} className="text-[#f59e0b]" fill="#f59e0b" />
-            <span className="text-[#f59e0b] text-sm font-medium">
-              West Palm Beach's #1 Custom Apparel
-            </span>
-          </div>
-
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-snug tracking-tight mb-5">
             High-Quality Custom
             <br />
             <span className="text-[#f59e0b]">Apparel & Merch</span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-gray-300 leading-relaxed mb-8 max-w-xl">
+          <p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-8 max-w-xl">
             Factory-direct pricing with the quality you deserve. Custom screen printing,
             embroidery, and graphic printing for businesses, schools, and organizations since 2012.
           </p>
