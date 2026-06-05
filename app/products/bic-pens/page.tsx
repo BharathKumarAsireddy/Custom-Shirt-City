@@ -3,7 +3,7 @@ import Image from "next/image";
 import { getProductsByCategory, getCategoryBySlug } from "@/lib/products";
 import ProductCard from "@/components/ProductCard";
 
-export const metadata: Metadata = { title: "BIC Pens" };
+export const metadata: Metadata = { title: "Pens" };
 
 export default function BicPensPage() {
   const cat = getCategoryBySlug("bic-pens")!;

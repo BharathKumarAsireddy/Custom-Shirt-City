@@ -58,10 +58,10 @@ export const categories: Category[] = [
     description: "Long sleeve shirts with premium fabrics for year-round versatility.",
   },
   {
-    name: "BIC Pens",
+    name: "Pens",
     slug: "bic-pens",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80&auto=format&fit=crop",
-    description: "Custom branded BIC pens — perfect for events, offices, and promotional giveaways.",
+    image: "https://images.unsplash.com/photo-1501556466850-7c9fa1fccb4c?w=800&q=80&auto=format&fit=crop",
+    description: "Custom branded pens — perfect for events, offices, and promotional giveaways.",
   },
 ];
 
@@ -542,18 +542,18 @@ export const products: Product[] = [
     onSale: true,
   },
 
-  // ── BIC PENS ────────────────────────────────────────────────────────────────
+  // ── PENS ────────────────────────────────────────────────────────────────────
   {
     id: "bic-1",
     slug: "bic-cristal-original-ballpoint-pen",
-    name: "BIC Cristal Original Ballpoint Pen",
+    name: "Cristal Original Ballpoint Pen",
     price: 24.99,
     originalPrice: 34.99,
-    category: "BIC Pens",
+    category: "Pens",
     categorySlug: "bic-pens",
-    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1498729277079-9aa24f85d92d?w=600&q=80&auto=format&fit=crop",
     description:
-      "The iconic BIC Cristal — the world's most popular ballpoint pen, custom branded with your logo. Crystal-clear barrel shows ink level at a glance. Available in blue, black, or red ink.",
+      "The iconic Cristal — the world's most popular ballpoint pen, custom branded with your logo. Crystal-clear barrel shows ink level at a glance. Available in blue, black, or red ink.",
     features: [
       "Laser-engraved or pad-printed logo",
       "Crystal-clear barrel for ink visibility",
@@ -566,13 +566,13 @@ export const products: Product[] = [
   {
     id: "bic-2",
     slug: "bic-round-stic-ballpoint-pen",
-    name: "BIC Round Stic Ballpoint Pen",
+    name: "Round Stic Ballpoint Pen",
     price: 18.99,
-    category: "BIC Pens",
+    category: "Pens",
     categorySlug: "bic-pens",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1512279093314-5926a353720c?w=600&q=80&auto=format&fit=crop",
     description:
-      "The BIC Round Stic — a smooth-writing everyday pen with a comfortable round barrel. Ideal for high-volume promotional orders. Your brand on every desk, every day.",
+      "A smooth-writing everyday pen with a comfortable round barrel. Ideal for high-volume promotional orders. Your brand on every desk, every day.",
     features: [
       "Comfortable round barrel design",
       "Tungsten carbide ball for smooth writing",
@@ -585,12 +585,12 @@ export const products: Product[] = [
   {
     id: "bic-3",
     slug: "bic-4-color-ballpoint-pen",
-    name: "BIC 4-Color Ballpoint Pen",
+    name: "4-Color Ballpoint Pen",
     price: 39.99,
     originalPrice: 49.99,
-    category: "BIC Pens",
+    category: "Pens",
     categorySlug: "bic-pens",
-    image: "https://images.unsplash.com/photo-1583195764036-46277a307020?w=600&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1506485338023-6ce5f36692df?w=600&q=80&auto=format&fit=crop",
     description:
       "Four pens in one — blue, black, red, and green ink in a single barrel. A bold statement piece that keeps your brand top-of-mind in every meeting and classroom.",
     features: [
@@ -605,13 +605,13 @@ export const products: Product[] = [
   {
     id: "bic-4",
     slug: "bic-soft-feel-ballpoint-pen",
-    name: "BIC Soft Feel Ballpoint Pen",
+    name: "Soft Feel Ballpoint Pen",
     price: 29.99,
-    category: "BIC Pens",
+    category: "Pens",
     categorySlug: "bic-pens",
-    image: "https://images.unsplash.com/photo-1527864234480-5a54f6d42e8f?w=600&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1513666639414-f795d25747a8?w=600&q=80&auto=format&fit=crop",
     description:
-      "The BIC Soft Feel — a rubberized comfort-grip pen that writes all day without fatigue. Perfect for trade shows, corporate gifts, and client appreciation packs.",
+      "A rubberized comfort-grip pen that writes all day without fatigue. Perfect for trade shows, corporate gifts, and client appreciation packs.",
     features: [
       "Soft rubber grip for extended comfort",
       "Retractable stainless steel tip",
